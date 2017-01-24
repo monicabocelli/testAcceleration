@@ -31,8 +31,9 @@ function draw() {
         text(valore, width/2, height - height/8);               text(valore, width/2, height - height/8);
      
     }                                                            }*/
-   deviceShaken(); 
-   for (value > 0; value < 1; value += value){
+  // deviceShaken(); 
+   //for (value > 0; value < 1; value += value){
+    for (value > 0; value < 100; value += deviceShaken()){
      textSize(height/30);
      textAlign(CENTER);
      textStyle(NORMAL);
