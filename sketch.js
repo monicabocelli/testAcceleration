@@ -31,7 +31,12 @@ function draw() {
         text(valore, width/2, height - height/8);               text(valore, width/2, height - height/8);
      
     }                                                            }*/
-   
+   deviceShaken(); 
+   for (value > 0; value < 1; value += value){
+     textSize(height/30);
+     textAlign(CENTER);
+     textStyle(NORMAL);
+     text(valore, width/2, height - height/8);
 }
 /* 1) function deviceShaken(val){
     val = abs(accelerationX) + abs(accelerationY) + abs(accelerationZ);
