@@ -24,7 +24,7 @@ function draw() {
         textStyle(NORMAL);    
         
         text(valore, width/2, height - height/8);
-        
+     
     }*/
    textSize(height/30);
    textAlign(CENTER);
@@ -35,7 +35,6 @@ function draw() {
     val = abs(accelerationX) + abs(accelerationY) + abs(accelerationZ);
     return val;
 }*/
-
 function deviceShaken(){
     value = abs(accelerationX) + abs(accelerationY) + abs(accelerationZ);
 }
