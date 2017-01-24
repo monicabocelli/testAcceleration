@@ -6,7 +6,7 @@ var finished = false;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  setShakeThreshold(0);
+  //setShakeThreshold(0);
 }
 
 function draw() {
