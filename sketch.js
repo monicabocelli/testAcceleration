@@ -20,24 +20,25 @@ function draw() {
     textAlign(CENTER);
     textStyle(NORMAL);
     text(value, width/2, height - height/8);
-    //var valore = deviceShaken(value);
+    //var valore = deviceShaken(value);                     //deviceShaken(); chiamarlo in draw() mi fa cambiare value in continuazione...
   
-   /* for (valore > 0; valore < 1; valore += valore){
+   /* 1) for (valore > 0; valore < 1; valore += valore){      2) for (value > 0; value < 1; value += value){
 
-        textSize(height/30);
-        textAlign(CENTER);
-        textStyle(NORMAL);    
+        textSize(height/30);                                    textSize(height/30);
+        textAlign(CENTER);                                      textAlign(CENTER);
+        textStyle(NORMAL);                                      textStyle(NORMAL);
         
-        text(valore, width/2, height - height/8);
+        text(valore, width/2, height - height/8);               text(valore, width/2, height - height/8);
      
-    }*/
+    }                                                            }*/
    
 }
-/*function deviceShaken(val){
+/* 1) function deviceShaken(val){
     val = abs(accelerationX) + abs(accelerationY) + abs(accelerationZ);
     return val;
 }*/
 
+// 2)
 function deviceShaken(){
     value = abs(accelerationX) + abs(accelerationY) + abs(accelerationZ);
 }
