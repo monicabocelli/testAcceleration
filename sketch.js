@@ -14,8 +14,8 @@ function draw() {
     fill(0);
     noStroke();
     text("SHAKE YOUR DEVICE", width/2, height - height/1.1);   
-    textSize(height/40);
-    text("value", width/2, height - height/10);
+    textSize(height/50);
+    text("value", width/2, height - height/11);
   
     textSize(height/30);
     textAlign(CENTER);
