@@ -13,13 +13,17 @@ function draw() {
     fill(0);
     noStroke();
     text("SHAKE YOUR DEVICE", width/2, height - height/1.1);   
-   
-    for (value = 0; value < 100   ; value += deviceShaken(value)){
+    text("value", width/2, height - height/10);
+    
+    var valore = deviceShaken(value);
+  
+    for (valore > 0; valore < 1; valore += valore){
 
-        textSize(height/20);
+        textSize(height/30);
         textAlign(CENTER);
         textStyle(NORMAL);    
-        text(value, width/2, height - height/8);
+        
+        text(valore, width/2, height - height/8);
            
     }
 }
