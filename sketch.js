@@ -13,8 +13,13 @@ function draw() {
     fill(0);
     noStroke();
     text("SHAKE YOUR DEVICE", width/2, height - height/1.1);   
+    textSize(height/40);
     text("value", width/2, height - height/10);
-    
+  
+    textSize(height/30);
+    textAlign(CENTER);
+    textStyle(NORMAL);
+    text(value, width/2, height - height/8);
     //var valore = deviceShaken(value);
   
    /* for (valore > 0; valore < 1; valore += valore){
@@ -26,15 +31,13 @@ function draw() {
         text(valore, width/2, height - height/8);
      
     }*/
-   textSize(height/30);
-   textAlign(CENTER);
-   textStyle(NORMAL);
-   text(value, width/2, height - height/8);
+   
 }
 /*function deviceShaken(val){
     val = abs(accelerationX) + abs(accelerationY) + abs(accelerationZ);
     return val;
 }*/
+
 function deviceShaken(){
     value = abs(accelerationX) + abs(accelerationY) + abs(accelerationZ);
 }
