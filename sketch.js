@@ -13,7 +13,9 @@ function setup() {
 }
 
 function draw() {
-  if (energy >= level1) {
+  if (energy >= level2){
+    //do things
+  } else if (energy >= level1) {
     //display things
     background(0);
   } else {
