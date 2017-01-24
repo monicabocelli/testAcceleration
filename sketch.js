@@ -11,7 +11,7 @@ function draw() {
     textSize(height/20);
     textAlign(CENTER);
     textStyle(BOLD);
-    fill(0);
+    fill(250,30,30);
     noStroke();
     text("SHAKE YOUR DEVICE", width/2, height - height/1.1);   
     textSize(height/50);
@@ -34,9 +34,9 @@ function draw() {
     }                                                            }*/
     //deviceShaken(); 
    //for (value > 0; value < 1; value += value){
-   var i = [];
-    for (i > 1; i < 1; i += abs(pAccelerationX) + abs(pAccelerationY) + abs(pAccelerationZ)){
-     value = value + abs(pAccelerationX) + abs(pAccelerationY) + abs(pAccelerationZ);
+    var i = [];
+    for (i > 1; i < 100; i++){
+     value = value + (abs(pAccelerationX) + abs(pAccelerationY) + abs(pAccelerationZ));
      textSize(height/40);
      textAlign(CENTER);
      textStyle(NORMAL);
