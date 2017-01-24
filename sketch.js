@@ -1,5 +1,5 @@
 var value = 0;
-var value2 = 0;
+//var value2 = 0;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -32,15 +32,16 @@ function draw() {
         text(valore, width/2, height - height/8);               text(valore, width/2, height - height/8);
      
     }                                                            }*/
-    deviceShaken(); 
+    //deviceShaken(); 
    //for (value > 0; value < 1; value += value){
-    for (value > 0; value < 100; value += value2){
-     //value = value + value2;
+   var i = [];
+    for (i > 1; i < 1; i += abs(pAccelerationX) + abs(pAccelerationY) + abs(pAccelerationZ)){
+     value = value + abs(pAccelerationX) + abs(pAccelerationY) + abs(pAccelerationZ);
      textSize(height/40);
      textAlign(CENTER);
      textStyle(NORMAL);
      text(value, width/2, height - height/8);
-     text(value2, width/2, height - height/9);
+     
    }
 /* 1) function deviceShaken(val){
     val = abs(accelerationX) + abs(accelerationY) + abs(accelerationZ);
@@ -52,5 +53,5 @@ function draw() {
 // 2)
 function deviceShaken(){
     value = abs(accelerationX) + abs(accelerationY) + abs(accelerationZ);
-    value2 = abs(pAccelerationX) + abs(pAccelerationY) + abs(pAccelerationZ);
+    //value2 = abs(pAccelerationX) + abs(pAccelerationY) + abs(pAccelerationZ);
 }
