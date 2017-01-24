@@ -24,7 +24,7 @@ function draw() {
         textStyle(NORMAL);    
         
         text(valore, width/2, height - height/8);
-           
+        
     }*/
    textSize(height/30);
    textAlign(CENTER);
