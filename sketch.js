@@ -17,7 +17,7 @@ function draw() {
     
     var valore = deviceShaken(value);
   
-    for (valore > 0; valore < 1; valore += valore){
+   /* for (valore > 0; valore < 1; valore += valore){
 
         textSize(height/30);
         textAlign(CENTER);
@@ -25,7 +25,11 @@ function draw() {
         
         text(valore, width/2, height - height/8);
            
-    }
+    }*/
+   textSize(height/30);
+   textAlign(CENTER);
+   textStyle(NORMAL);
+   text(valore, width/2, height - height/8);
 }
 function deviceShaken(val){
     val = abs(accelerationX) + abs(accelerationY) + abs(accelerationZ);
