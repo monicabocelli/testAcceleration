@@ -1,6 +1,6 @@
 var energy = 0;
 var singleShake = 0;
-
+var finished = false;
 var level1 = 20000;
 
 //var value2 = 0;
@@ -37,5 +37,9 @@ function reset() {
 
 function deviceShaken(){
   singleShake = abs(accelerationX) + abs(accelerationY) + abs(accelerationZ);
-  energy += singleShake;
+  //energy += singleShake;
+  
+  if (singleShake > 30){
+    energy += singleShake;
+  } else { finished == true;}
 }
