@@ -15,7 +15,7 @@ function draw() {
     text("SHAKE YOUR DEVICE", width/2, height - height/1.1);   
     text("value", width/2, height - height/10);
     
-    var valore = deviceShaken(value);
+    //var valore = deviceShaken(value);
   
    /* for (valore > 0; valore < 1; valore += valore){
 
@@ -31,7 +31,11 @@ function draw() {
    textStyle(NORMAL);
    text(valore, width/2, height - height/8);
 }
-function deviceShaken(val){
+/*function deviceShaken(val){
     val = abs(accelerationX) + abs(accelerationY) + abs(accelerationZ);
     return val;
+}*/
+
+function deviceShaken(){
+    value = abs(accelerationX) + abs(accelerationY) + abs(accelerationZ);
 }
