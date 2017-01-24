@@ -57,13 +57,13 @@ function draw() {
   
 // 2)
 function deviceShaken(){
-    var i = [];
-    for (i > 1; i < 10; i++){
+    value = abs(accelerationX) + abs(accelerationY) + abs(accelerationZ);
+    for (value = 0; value < 100; value += value){
      value = (abs(accelerationX) + abs(accelerationY) + abs(accelerationZ)) + (abs(pAccelerationX) + abs(pAccelerationY) + abs(pAccelerationZ));
-     textSize(height/40);
-     textAlign(CENTER);
-     textStyle(NORMAL);
-     text(value, width/2, height - height/8);
+    // textSize(height/40);
+    // textAlign(CENTER);
+    // textStyle(NORMAL);
+    // text(value, width/2, height - height/8);
      
    }
   
