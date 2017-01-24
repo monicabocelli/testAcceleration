@@ -29,7 +29,7 @@ function draw() {
    textSize(height/30);
    textAlign(CENTER);
    textStyle(NORMAL);
-   text(valore, width/2, height - height/8);
+   text(value, width/2, height - height/8);
 }
 /*function deviceShaken(val){
     val = abs(accelerationX) + abs(accelerationY) + abs(accelerationZ);
