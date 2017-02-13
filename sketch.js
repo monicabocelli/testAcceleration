@@ -7,6 +7,7 @@ var level1 = 20000;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
+  background(237, 34, 93);
   // by default, the shake thresold is set to 30.
   // you can modify it using setShakeThreshold() function.
   setShakeThreshold(20);
