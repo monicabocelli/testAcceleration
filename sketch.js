@@ -2,6 +2,7 @@ var energy = 0;
 var singleShake = 0;
 var finished = false;
 var level1 = 20000;
+var level2 = 30000;
 
 //var value2 = 0;
 
@@ -14,7 +15,7 @@ function setup() {
 }
 
 function draw() {
-  background(237, 34, 93);
+ // background(237, 34, 93);
   
   if (energy >= level2){
     //do things
